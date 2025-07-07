@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Shamsi General Trading</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <div class="bg-gray-100 text-right px-6 py-2 text-sm">
+    <label for="lang-select" class="mr-2 font-medium">Language:</label>
+    <select id="lang-select" onchange="changeLanguage(this.value)" class="px-2 py-1 border rounded">
+      <option value="en">English</option>
+      <option value="ar">العربية</option>
+      <option value="de">Deutsch</option>
+      <option value="sv">Svenska</option>
+    </select>
+  </div>
+  <div class="container">
+    <div class="header-main">
+      <a href="../index.html" aria-label="Go to Homepage" style="text-decoration: none; color: inherit;">
+        <img src="../images/shamsi.png" alt="Shamsi Logo" class="header-logo" >
+      </a>
+      <a href="../index.html" aria-label="Go to Homepage" style="text-decoration: none; color: inherit;">
+        <h1>Shamsi General Trading</h1>
+      </a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="al-rawabi.html">Al Rawabi Mejeri AB</a></li>
+        <li><a href="shamsi-trading.html">Shamsi General Trading AB</a></li>
+        <li><a href="scandia-akeri.html">Scandia Åkeri AB</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <h2>About Shamsi General Trading</h2>
+    <p>An integrated family of companies delivering quality across Sweden.</p>
+  </div>
+</section>
+
+<div class="container" style="padding: 40px 20px;">
+    
+    <div style="max-width: 850px; margin: auto; text-align: center;">
+
+        <h3 style="font-size: 1.8rem; color: #333; font-family: 'Cairo', sans-serif; margin-bottom: 20px;">Our Integrated Approach</h3>
+        <p style="font-size: 1.1rem; line-height: 1.7; margin-bottom: 40px;">
+            Shamsi General Trading is a family of companies united by a single mission: to deliver reliable, high-quality food and logistics solutions. Our strength lies in our synergy—from producing authentic dairy to importing world-renowned brands and managing our own logistics, every part of our organization works in harmony.
+        </p>
+        
+        <hr style="margin: 40px auto; width: 80%; border: 0; border-top: 1px solid #e0e0e0;">
+
+    </div>
+
+    <div style="max-width: 850px; margin: auto;">
+
+        <div style="margin-bottom: 40px; text-align: center;">
+            <h3 style="font-size: 1.8rem; color: #005792; font-family: 'Cairo', sans-serif; margin-bottom: 15px;">🧀 Al Rawabi Mejeri AB</h3>
+            <p style="font-size: 1.1rem; line-height: 1.7;">
+                Focused on producing high-quality cheese and dairy products. Inspired by traditional Middle Eastern recipes and adapted to local Swedish standards, Al Rawabi Mejeri offers freshness, authenticity, and cultural familiarity.
+            </p>
+        </div>
+
+        <hr style="margin: 40px auto; width: 80%; border: 0; border-top: 1px solid #e0e0e0;">
+
+        <div style="margin-bottom: 40px; text-align: center;">
+            <h3 style="font-size: 1.8rem; color: #005792; font-family: 'Cairo', sans-serif; margin-bottom: 15px;">🌍 Shamsi General Trading AB</h3>
+            <p style="font-size: 1.1rem; line-height: 1.7;">
+                Our trading company specializes in importing global brands and foodstuffs, including renowned Mobakher products from Syria and Egypt. We serve multicultural retailers, restaurants, and grocery chains with pantry essentials.
+            </p>
+        </div>
+
+        <hr style="margin: 40px auto; width: 80%; border: 0; border-top: 1px solid #e0e0e0;">
+        
+        <div style="margin-bottom: 40px; text-align: center;">
+            <h3 style="font-size: 1.8rem; color: #005792; font-family: 'Cairo', sans-serif; margin-bottom: 15px;">🚚 Scandia Åkeri AB</h3>
+            <p style="font-size: 1.1rem; line-height: 1.7;">
+                The newest addition to our company, this logistics company ensures fast and safe transport of goods across Sweden and Europe. With a focus on food-grade transport and efficient routing, we keep supply chains moving.
+            </p>
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+  <div class="container">
+    <p>&copy; 2025 Shamsi General Trading. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+  function changeLanguage(lang) {
+    const page = window.location.pathname.split('/').pop() || "index.html";
+    if (lang === "en") {
+      window.location.href = `/${page}`; // English is in root
+    } else {
+      window.location.href = `/${lang}/${page}`;
+    }
+  }
+</script>
+</body>
+</html>
